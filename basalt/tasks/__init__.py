@@ -1,5 +1,6 @@
 from dict_config_parser import DictConfigParser
 from config_generator import generate_config
+from config_generator import get_config_vars
 from fs_commands import mkdirp
 from simple_version import get_major_version
 from simple_version import get_minor_version
