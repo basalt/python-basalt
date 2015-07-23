@@ -15,6 +15,6 @@ setup(
         'Jinja2',
         'sh',
     ],
-    description='',
+    description='Helper functions for the basalt invoke build file.',
     platforms='any',
 )
