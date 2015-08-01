@@ -10,7 +10,7 @@ setup(
     author='Jochen Breuer',
     author_email='brejoc@gmail.com',
     install_requires=[
-        'invoke',
+        'invoke==0.7.0',
         'PyYAML',
         'Jinja2',
         'sh',
