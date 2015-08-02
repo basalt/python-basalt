@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 
 NAME=basalt-tasks
-VERSION=0.1
+VERSION=0.1.1
 
 .PHONY: all clean prepare package_deb
 .SILENT: desc
