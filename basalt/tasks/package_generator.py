@@ -57,15 +57,6 @@ def package(yaml_conf_file, injects=None, builder='fpm'):
                 # fpm_args.append(single_dash_parameter % ('d', dependency))
                 fpm_args.append("-d")
                 fpm_args.append(dependency)
-    if gen_config.has_key('conflicts'):
-        dependencies = gen_config.pop('conflicts')
-        if type(dependencies) is str:
-            fpm_args.append("--conflicts")
-            fpm_args.append(dependencies)
-        elif type(dependencies) is list:
-            for dependency in dependencies:
-                fpm_args.append("--conflicts")
-                fpm_args.append(dependency)
 
     for key, value in gen_config.items():
         param = ""
