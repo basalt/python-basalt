@@ -2,8 +2,8 @@ import os
 import sys
 import yaml
 
-from utils import print_err
-from fs_commands import mkdirp
+from .utils import print_err
+from .fs_commands import mkdirp
 from jinja2 import Template, Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader('templates'))
@@ -22,7 +22,7 @@ def generate_config(template_name, config, outputfile, section="build-vars"):
     """\
     Generates a config from a template and with values from the yaml config.
 
-    A section can optionally be passed if somthing else than 'build-vars' should be used. 
+    A section can optionally be passed if somthing else than 'build-vars' should be used.
     """
     config_vars = get_config_vars(config)
     script_template = env.get_template(template_name)
